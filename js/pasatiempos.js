@@ -3,19 +3,19 @@ const pasatiempos = [
 {
 titulo:"Ajedrez",
 descripcion:"Juego que me encanta. Llevo estudiándolo desde abril de 2025 y actualmente aspiro a ser preseleccionada para los ASCUN.",
-imagen:"../imagenes/ajedrez.jpg"
+imagen:"../imagenes/chess.JPEG"
 },
 
 {
 titulo:"Estudio de Idiomas",
 descripcion:"Me gusta aprender nuevos idiomas y mejorar mis habilidades de comunicación.",
-imagen:"../imagenes/idiomas.jpg"
+imagen:"../imagenes/idiomas.JPEG"
 },
 
 {
 titulo:"Salir con Amigos",
 descripcion:"Disfruto compartir tiempo con amigos, conversar y crear nuevos recuerdos.",
-imagen:"../imagenes/amigos.jpg"
+imagen:"../imagenes/amigos.JPEG"
 },
 
 {

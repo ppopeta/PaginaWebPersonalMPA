@@ -17,30 +17,8 @@ if(nombre === "" || correo === "" || mensaje === ""){
 
 }
 
-/* ENVIO AL SERVIDOR */
-
-const respuesta = await fetch("http://localhost:3000/contacto",{
-
-method:"POST",
-
-headers:{
-"Content-Type":"application/json"
-},
-
-body: JSON.stringify({
-nombre,
-correo,
-mensaje
-})
-
-});
-
-if(respuesta.ok){
-
 alert("Formulario enviado correctamente ✅");
 
 form.reset();
-
-}
 
 });

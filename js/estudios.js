@@ -11,6 +11,16 @@ titulo: "Bachillerato tecnico en desarrollo de software web",
 institucion: "Colegio Comfandi Terranova",
 descripcion: "Formación académica enfocada en matemáticas, lógica y ciencias y tegnología"
 },
+{
+titulo: "Curso de IA innovador",
+institucion: "Ministerio de las TICs",
+descripcion: "Formación en el area de redes neuronales, aprendizaje automático y sus aplicaciones en el mundo real."
+},
+{
+titulo: "Certificado de Ingles C2",
+institucion: "Michigan EMichigan English Test (MET)",
+descripcion: "Hecho en 2022, este certificado demuestra mi dominio avanzado del inglés, lo que me permite comunicarme eficazmente en entornos académicos y profesionales."
+}
 
 ];
 
