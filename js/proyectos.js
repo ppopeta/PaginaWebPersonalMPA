@@ -1,20 +1,20 @@
 const proyectos = [
 
 {
-nombre: "Página Web Personal",
-descripcion: "Una página web hecha con HTML, CSS y JavaScript.",
+nombre: "Clasificador de perros y gatos",
+descripcion: "Mediante una red neuronal convolucional, clasifica imágenes de perros y gatos con una precisión del 95%.",
+link: "https://github.com/ppopeta/Clasificacion-PerrosGatos-IA-Mintic-2026"
+},
+
+{
+nombre: "Ajedrez con variantes",
+descripcion: "Utilizando python se hizo un ajedrez con varias variantes, que utilizan el patron de diseño de microkernel, con el fin de facilitar la adición de nuevas variantes sin modificar el núcleo del juego.",
 link: "#"
 },
 
 {
-nombre: "Sistema de Login",
-descripcion: "Backend hecho con NestJS y autenticación JWT.",
-link: "#"
-},
-
-{
-nombre: "Chat con Sockets",
-descripcion: "Aplicación de chat en tiempo real usando WebSockets.",
+nombre: "Clasificador de numeros escritos a mano",
+descripcion: "Utilizando una red neuronal convolucional, clasifica imágenes de números escritos a mano con una precisión del 98%.",
 link: "#"
 }
 
