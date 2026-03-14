@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 80px;
+
+    background: rgba(0,0,0,0.5); /* transparencia */
+    backdrop-filter: blur(12px); /* desenfoque estilo iOS */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    font-size:24px;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#ccc;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#fff;
+}
+
+body{
+    background:rgb(44,44,46);
+    color:white;
+    font-family:Arial;
+    margin:0;
+    padding-top:90px; /* espacio para el navbar */
+}
+
+h1{
+text-align:center;
+margin-top:40px;
+}
+
+#contenedor-estudios{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.estudio{
+    background:#1c1c1c;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    transition:all 0.3s ease;
+}
+
+.estudio:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.institucion{
+color:#ff8ac1;
+font-weight:bold;
+}
