@@ -9,7 +9,7 @@ link: "https://github.com/ppopeta/Clasificacion-PerrosGatos-IA-Mintic-2026"
 {
 nombre: "Ajedrez con variantes",
 descripcion: "Utilizando python se hizo un ajedrez con varias variantes, que utilizan el patron de diseño de microkernel, con el fin de facilitar la adición de nuevas variantes sin modificar el núcleo del juego.",
-link: "#"
+link: "https://github.com/ppopeta/chess_microkernel"
 },
 
 {
