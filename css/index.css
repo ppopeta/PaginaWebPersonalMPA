@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
     margin:0;
     padding:0;
@@ -10,12 +12,13 @@ body{
     color:#fff;
 }
 
+
 /* NAVBAR */
 
 .navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position:fixed;
+    top:0;
+    width:100%;
 
     display:flex;
     justify-content:space-between;
@@ -23,9 +26,11 @@ body{
 
     padding:15px 80px;
 
-    background: rgba(0,0,0,0.5); /* transparencia */
-    backdrop-filter: blur(12px); /* desenfoque estilo iOS */
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+
+    z-index:1000;
 }
 
 .logo{
@@ -49,98 +54,158 @@ body{
     color:#fff;
 }
 
+
 /* HERO */
 
 .hero{
-    height:90vh;
+
+    padding-top:120px; /* evita que el navbar tape el contenido */
+    padding-bottom:40px;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
 }
 
 .hero h1{
     font-size:60px;
-    font-weight:700px;
+    font-weight:700;
 }
 
 .hero h2{
     font-size:40px;
     color:#aaa;
     margin-bottom:20px;
-
 }
 
 .hero p{
     color:#bbb;
     font-size:20px;
     margin-bottom:30px;
-    max-width:1000px;   /* tamaño del rectángulo */
-    text-align:justify; /* justifica el texto */
-    line-height:1.6;   /* espacio entre líneas */
+    max-width:1000px;
+    text-align:justify;
+    line-height:1.6;
 }
 
 
-/* BOTONES 
+.links{
+    padding:60px 20px;
+    text-align:center;
+}
 
-.buttons{
+.links h2{
+    margin-bottom:25px;
+}
+
+#links-caja{
+    background:#1c1c1c;
+    max-width:500px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.link-item{
+    display:block;
+    padding:14px;
+    background:#2a2a2a;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.link-item:hover{
+    background:rgb(255,138,193);
+    transform:scale(1.05);
+}
+
+.galeria{
+    margin-top:30px;
+    padding:20px;
+}
+
+.galeria h2{
+    margin-left:20px;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.carrusel-container{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.carrusel{
     display:flex;
     gap:20px;
-}
-
-.btn-primary{
-    background:rgb(255,138,193);
-    padding:12px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    color:white;
-    font-weight:500;
-}
-
-.btn-primary:hover{
-    background:rgb(255,110,175);
-}
-
-.btn-secondary{
-    border:2px solid rgb(255,138,193);
-    color:rgb(255,138,193);
-    padding:12px 25px;
-    border-radius:30px;
-    text-decoration:none;
-}
-
-.btn-secondary:hover{
-    background:rgb(255,138,193);
-    color:white;
-}
-*/
-
-/*Parte del carrusel de imagenes*/
-
-.scroll-container{
-    display:flex;
-    gap:15px;
     overflow-x:auto;
-    padding:20px;
     scroll-behavior:smooth;
+    padding:20px;
 }
 
-.scroll-container::-webkit-scrollbar{
+.carrusel::-webkit-scrollbar{
     display:none;
 }
 
-.card{
-    min-width:200px;
+.carrusel img{
+    width:450px;
+    height:300px;
+    object-fit:cover;
     border-radius:12px;
-    overflow:hidden;
-    transition: transform 0.3s;
+    transition:transform 0.3s;
 }
 
-.card img{
-    width:100%;
-}
-
-.card:hover{
+.carrusel img:hover{
     transform:scale(1.15);
+}
+
+.flecha{
+    background:rgba(0,0,0,0.6);
+    border:none;
+    color:white;
+    font-size:30px;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.flecha:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+.izquierda{
+    margin-right:10px;
+}
+
+.derecha{
+    margin-left:10px;
+}
+
+#mensaje-copiado{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#1c1c1c;
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:14px;
+    opacity:0;
+    transform:translateY(20px);
+    transition:all 0.4s ease;
+    pointer-events:none;
+}
+
+#mensaje-copiado.mostrar{
+    opacity:1;
+    transform:translateY(0);
 }
