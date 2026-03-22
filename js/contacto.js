@@ -8,8 +8,6 @@ const nombre = document.getElementById("nombre").value.trim();
 const correo = document.getElementById("correo").value.trim();
 const mensaje = document.getElementById("mensaje").value.trim();
 
-/* VALIDACION */
-
 if(nombre === "" || correo === "" || mensaje === ""){
     
     alert("⚠️ Debes completar todos los campos antes de enviar el formulario");
@@ -17,8 +15,8 @@ if(nombre === "" || correo === "" || mensaje === ""){
 
 }
 
-alert("Formulario enviado correctamente ✅");
-
+alert("Formulario enviado correctamente");
+   
 form.reset();
 
 });
